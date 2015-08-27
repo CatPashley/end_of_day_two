@@ -56,7 +56,28 @@ def test_range_overlap_one_range():
         assert range_overlap([ (0.0, 1.0) ]) == (0.0, 1.0)
 
 
+# The write a solution - one possible one is below.
 
+#
+
+# And test it...
+
+# In[5]:
+
+
+
+# In[6]:
+
+
+
+# In[7]:
+
+
+# Should we add to the tests?
+
+# Can you write version with fewer bugs. My attempt is below.
+
+# In[8]:
 
 def pairs_overlap(rangeA, rangeB):
     # Check if A starts after B ends and 
@@ -107,17 +128,14 @@ def range_overlap(ranges):
             return None
 
 
+# In[9]:
 
-if __name__ == "__main__":
-
-    import sys
-
-    start = float(sys.argv[1])
-    end = float(sys.argv[2])
-
-    print range_overlap([(start,end)])
+test_range_overlap()
+test_range_overlap_one_range()
+test_range_overlap_no_overlap()
 
 
+# In[ ]:
 
 
 
